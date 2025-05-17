@@ -15,6 +15,10 @@ public class ChatController {
 	public ChatMessage sendMessage(ChatMessage message) {
 		return message;
 	}
+	@GetMapping("/")
+	public String getReq() {
+		return "redirect:/chat";
+	}
 	
 	@GetMapping("/chat")
 	public String chat() {
